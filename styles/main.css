@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+header {
+  height: 230px;
+  background: #dcdcdc;
+}
+
+.center {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.phone-number {
+  font-size: 35px;
+}
