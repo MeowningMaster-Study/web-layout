@@ -43,7 +43,7 @@ body {
 }
 
 .company-img {
-  background: var(--text-gray);
+  background: var(--dark-gray);
   float: left;
   margin-right: 14px;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .top-nav {
-  background: var(--nav-background);
+  background: var(--dark-gray);
 }
 
 .top-nav ul {
@@ -122,4 +122,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.site-footer {
+  height: 220px;
+  background: var(--dark-gray);
 }
