@@ -63,12 +63,44 @@ header > .center-block {
 .feedback {
   font-size: 20px;
   font-weight: bold;
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
+  text-decoration: underline dashed;
   color: var(--text-gray);
 }
 
 .feedback:hover {
   color: black;
   text-decoration-style: solid;
+}
+
+nav {
+  background: var(--nav-background);
+}
+
+nav ul {
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+nav li a {
+  color: white;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+nav li a::before {
+  content: "|";
+  margin-right: 3px;
+}
+
+nav li:first-of-type a::before {
+  content: "";
+}
+
+nav li a:hover {
+  text-decoration: underline solid;
 }
