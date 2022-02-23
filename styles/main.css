@@ -1,3 +1,6 @@
+@import url(./colors.css);
+@import url(./fonts.css);
+
 body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -7,15 +10,65 @@ body {
 
 header {
   height: 230px;
-  background: #dcdcdc;
+  background: var(--light-gray);
+  color: var(--text-gray);
 }
 
-.center {
+.center-block {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+header > .center-block {
+  display: flex;
+}
+
+.header-left {
+  flex-grow: 1;
+  padding-top: 65px;
+}
+
+.header-right {
+  padding-top: 45px;
+  text-align: end;
+}
+
+.company-img {
+  background: var(--text-gray);
+  float: left;
+  margin-right: 14px;
+}
+
+.center-company-data {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.company-name {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .phone-number {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
   font-size: 35px;
+  line-height: 40px;
+}
+
+.feedback {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  color: var(--text-gray);
+}
+
+.feedback:hover {
+  color: black;
+  text-decoration-style: solid;
 }
