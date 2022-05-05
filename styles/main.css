@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 22px;
   min-width: 600px;
   min-height: 100vh;
@@ -38,11 +38,16 @@ body {
 .site-content .sidebar {
   flex-basis: 200px;
   flex-shrink: 0;
-  font-size: 1.2em;
+  font-size: 2rem;
 }
 
 .sidebar li > a {
   text-decoration: none;
+  color: var(--text);
+}
+
+.sidebar li > a:hover {
+  text-decoration: underline;
 }
 
 .sidebar > ul {
@@ -63,4 +68,29 @@ body {
   margin-top: 36px;
   height: 220px;
   background: var(--foreground-bold);
+}
+
+/* pagination */
+
+.pagination {
+  margin-top: 24px;
+  font-size: 1.8rem;
+}
+
+.pagination ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination ul > li > a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.pagination ul > li > a:hover {
+  text-decoration: underline;
 }

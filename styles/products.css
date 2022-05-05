@@ -16,7 +16,7 @@
 
 .product .description {
   margin-top: 20px;
-  font-size: 1.1em;
+  font-size: 1.8rem;
 }
 
 .product .bottom {
@@ -26,9 +26,20 @@
 
 .product .price {
   flex-grow: 1;
-  font-size: 1.4em;
+  font-size: 2.2rem;
 }
 
 .product .bottom img {
   cursor: pointer;
+}
+
+.company-description-hr {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.company-description {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
 }

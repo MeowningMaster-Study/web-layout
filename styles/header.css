@@ -31,7 +31,7 @@
 }
 
 .company-name {
-  font-size: 1.8em;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -110,6 +110,7 @@
 .breadcrumb li a {
   margin: 0 3px;
   text-decoration: none;
+  color: var(--text);
 }
 
 .breadcrumb li + li::before {
