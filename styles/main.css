@@ -2,6 +2,7 @@
 @import url(./fonts.css);
 @import url(./header.css);
 @import url(./carousel.css);
+@import url(./footer.css);
 
 html {
   font-size: 10px;
@@ -69,6 +70,12 @@ body {
 
 .menu li {
   display: inline;
+}
+
+.menu,
+.block-menu {
+  margin: 0;
+  padding-left: 0;
 }
 
 .menu li,
