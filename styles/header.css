@@ -67,16 +67,10 @@
   padding: 18px 0;
 }
 
-.top-nav li {
-  display: inline;
-  list-style: none;
-}
-
 .top-nav li a {
   margin: 0 3px;
   color: var(--text-bold);
   font-size: 2.1rem;
-  text-decoration: none;
 }
 
 .top-nav li + li::before {
@@ -85,10 +79,6 @@
   margin-right: 8px;
   font-size: 2.1rem;
   transform: translate(0, 15px);
-}
-
-.top-nav li a:hover {
-  text-decoration: underline solid;
 }
 
 /* breadcrumb */
