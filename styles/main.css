@@ -21,14 +21,7 @@ body {
 .center-block {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.center-block-wide {
-  margin: 0 auto;
-  max-width: 1400px;
-  padding: 0 10px;
+  padding: 0 16px;
   box-sizing: border-box;
 }
 
@@ -45,9 +38,24 @@ body {
 .site-content .sidebar {
   flex-basis: 200px;
   flex-shrink: 0;
+  font-size: 1.2em;
 }
 
-.site-content main {
+.sidebar li > a {
+  text-decoration: none;
+}
+
+.sidebar > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar > ul > li > ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.site-content .mainblock {
   flex-grow: 1;
 }
 
