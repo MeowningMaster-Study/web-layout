@@ -1,0 +1,34 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.product {
+  padding: 20px;
+  background-color: var(--foreground);
+}
+
+.product img {
+  margin: 0 auto;
+  display: block;
+}
+
+.product .description {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.product .bottom {
+  margin-top: 20px;
+  display: flex;
+}
+
+.product .price {
+  flex-grow: 1;
+  font-size: 1.4em;
+}
+
+.product .bottom img {
+  cursor: pointer;
+}

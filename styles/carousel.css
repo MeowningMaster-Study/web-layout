@@ -1,0 +1,14 @@
+.carousel {
+  height: 400px;
+  background: var(--carousel-background);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel img {
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}

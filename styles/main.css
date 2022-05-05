@@ -1,17 +1,21 @@
 @import url(./colors.css);
 @import url(./fonts.css);
+@import url(./header.css);
+@import url(./carousel.css);
+
+html {
+  font-size: 10px;
+}
 
 body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 14px;
+  font-size: 1.6rem;
   line-height: 22px;
-}
-
-.site-header {
-  height: 230px;
-  background: var(--light-gray);
-  color: var(--text-gray);
+  min-width: 600px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .center-block {
@@ -28,103 +32,27 @@ body {
   box-sizing: border-box;
 }
 
-.site-header > .center-block {
-  display: flex;
-}
-
-.header-left {
+.site-content {
   flex-grow: 1;
-  padding-top: 65px;
+  margin-top: 16px;
 }
 
-.header-right {
-  padding-top: 45px;
-  text-align: end;
-}
-
-.company-img {
-  background: var(--dark-gray);
-  float: left;
-  margin-right: 14px;
-}
-
-.center-company-data {
-  height: 100px;
+.site-content > .center-block {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 16px;
 }
 
-.company-name {
-  font-size: 23px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.site-content .sidebar {
+  flex-basis: 200px;
+  flex-shrink: 0;
 }
 
-.phone-number {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 35px;
-  line-height: 40px;
-}
-
-.feedback {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: underline dashed;
-  color: var(--text-gray);
-}
-
-.feedback:hover {
-  color: black;
-  text-decoration-style: solid;
-}
-
-.top-nav {
-  background: var(--dark-gray);
-}
-
-.top-nav ul {
-  margin: 0;
-  text-align: center;
-  padding: 18px 0;
-}
-
-.top-nav li {
-  display: inline;
-  list-style: none;
-}
-
-.top-nav li a {
-  margin: 0 3px;
-  color: white;
-  font-size: 21px;
-  text-decoration: none;
-}
-
-.top-nav li a::before {
-  content: "|";
-  margin-right: 8px;
-}
-
-.top-nav li:first-of-type a::before {
-  content: "";
-}
-
-.top-nav li a:hover {
-  text-decoration: underline solid;
-}
-
-.carousel {
-  height: 400px;
-  background: var(--carousel-background);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.site-content main {
+  flex-grow: 1;
 }
 
 .site-footer {
+  margin-top: 36px;
   height: 220px;
-  background: var(--dark-gray);
+  background: var(--foreground-bold);
 }
