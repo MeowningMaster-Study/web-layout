@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var modal = document.getElementById("ctc-modal");
+  const modal = document.getElementById("ctc-modal");
 
-  var btn = document.getElementById("ctc-btn");
+  const btn = document.getElementById("ctc-btn");
 
-  var span = document.getElementsByClassName("close")[0];
+  const span = document.getElementsByClassName("close")[0];
 
   function open() {
     document.getElementsByTagName("body")[0].style.overflow = "hidden";

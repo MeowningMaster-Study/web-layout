@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/products.css" />
     <script src="scripts/modal.js" type="module"></script>
+    <script src="scripts/carousel.js" type="module"></script>
   </head>
 
   <body>
@@ -64,7 +65,17 @@
     </nav>
 
     <div class="carousel">
-      <img src="./images/carousel/c1.jpg" alt="carousel image" />
+      <div class="carousel-slides">
+        <img
+          class="active"
+          src="./images/carousel/c1.jpg"
+          alt="carousel image"
+        />
+        <img src="./images/carousel/c2.jpg" alt="carousel image" />
+        <img src="./images/carousel/c3.jpg" alt="carousel image" />
+      </div>
+      <div class="carousel-back"></div>
+      <div class="carousel-next"></div>
     </div>
 
     <div class="breadcrumb">
