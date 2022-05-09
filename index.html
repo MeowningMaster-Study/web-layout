@@ -8,9 +8,26 @@
     <link rel="icon" type="image/png" href="images/cupcake.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/products.css" />
+    <script src="scripts/modal.js" type="module"></script>
   </head>
 
   <body>
+    <div class="modal" id="ctc-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Call order</h1>
+        <form>
+          <label>Name *</label>
+          <input type="text" placeholder="John Doe" required />
+          <label>Phone number *</label>
+          <input type="tel" placeholder="+380991223334" required />
+          <label>Email *</label>
+          <input type="email" placeholder="john-doe@gmail.com" required />
+          <input value="Submit" type="submit" />
+        </form>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="center-block">
         <div class="header-left">
@@ -29,7 +46,7 @@
         <div class="header-right">
           <div class="phone-number">+380 (99) 777-33-44</div>
           <div class="phone-number">+380 (63) 777-33-44</div>
-          <a class="feedback" href="#">Click-To-Call</a>
+          <a class="feedback" id="ctc-btn">Click-To-Call</a>
         </div>
       </div>
     </header>
